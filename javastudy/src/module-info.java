@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author moonlight
+ *
+ */
+module javastudy {
+}
