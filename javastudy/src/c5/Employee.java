@@ -1,23 +1,56 @@
 package c5;
 import java.time.*;
 
-class Employee {
-	private final String name;
+public class Employee extends Person implements Comparable<Employee>{
+//	private final String name;
 	private double salary;
 	private LocalDate hireDay;
+	private int id = assignID();
+	private static int nextID;
 	
-	private static int nextID = 1;
+	
+	{
+		hireDay = LocalDate.now();
+	}
+	
+	
+	static 
+	{
+		nextID = 1;
+	}
+	
+	public Employee() {
+		this(0);
+	}
+	
+	public Employee(double s) {
+		this("Employee #"+nextID, s);
+	}
+	
+	public Employee(String n, double s) {
+		super(n);
+		salary = s;
+	}
 	
 	public Employee(String n, double s, int year, int month, int day) {
-		name = n;
+		super(n);
 		salary = s;
 		hireDay = LocalDate.of(year, month, day);
-		nextID++;
 	}
 	
-	public String getName() {
-		return name;
+	private int assignID() {
+		int r = nextID;
+		nextID++;
+		return r;
 	}
+	
+	public int getID() {
+		return id;
+	}
+	
+//	public String getName() {
+//		return name;
+//	}
 	
 	public double getSalary() {
 		return salary;
@@ -35,6 +68,52 @@ class Employee {
 	
 	public static int getNextId() {
 		return nextID;
+	}
+	
+
+	
+	// equals 
+	public boolean equals(Object otherObject) {
+		if (this == otherObject) 
+			return true;
+		if (otherObject == null) 
+			return false;
+		System.out.println(getClass());
+		if (getClass() != otherObject.getClass())
+			return false;
+		
+		Employee other = (Employee)otherObject;
+		
+		return name.equals(other.name)
+			&& salary == other.salary
+			&& hireDay.equals(other.hireDay);
+		
+	}
+	
+	//get description
+	public String getDescription() {
+		return String.format("an employee with a salary of $%.2f", getSalary());
+	}
+	
+	//hash code
+	public int hashcode() {
+		return 7 * name.hashCode()
+			+ 11 * new Double(salary).hashCode()
+			+ 13 * hireDay.hashCode();
+	}
+	
+	
+	// toString
+	public String toString() {
+		return "Employee[name=" + name
+			+ ",salary=" + salary
+			+ ",hireDay" + hireDay
+			+ "]";
+	}
+	
+	//compare
+	public int compareTo(Employee other) {
+		return Double.compare(this.getSalary(), other.getSalary());
 	}
 	
 	public static void main(String[] args) {
