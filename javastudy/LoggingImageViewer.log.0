@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-16T14:18:31.114669Z</date>
+  <millis>1542377911114</millis>
+  <nanos>669000</nanos>
+  <sequence>0</sequence>
+  <logger>local.corejava</logger>
+  <level>INFO</level>
+  <class>c7.LoggingImageViewer</class>
+  <method>lambda$0</method>
+  <thread>16</thread>
+  <message>window open successfully</message>
+</record>
+<record>
+  <date>2018-11-16T14:18:31.172402Z</date>
+  <millis>1542377911172</millis>
+  <nanos>402000</nanos>
+  <sequence>1</sequence>
+  <logger>local.corejava</logger>
+  <level>FINER</level>
+  <class>ImageViewrFrame</class>
+  <method>&lt;init&gt;</method>
+  <thread>16</thread>
+  <message>ENTRY</message>
+</record>
+<record>
+  <date>2018-11-16T14:18:31.188695Z</date>
+  <millis>1542377911188</millis>
+  <nanos>695000</nanos>
+  <sequence>2</sequence>
+  <logger>local.corejava</logger>
+  <level>FINER</level>
+  <class>ImageViewerFrame</class>
+  <method>&lt;init&gt;</method>
+  <thread>16</thread>
+  <message>RETURN</message>
+</record>
+<record>
+  <date>2018-11-16T14:18:31.189711Z</date>
+  <millis>1542377911189</millis>
+  <nanos>711000</nanos>
+  <sequence>3</sequence>
+  <logger>local.corejava</logger>
+  <level>FINE</level>
+  <class>c7.LoggingImageViewer</class>
+  <method>lambda$0</method>
+  <thread>16</thread>
+  <message>Showing frame</message>
+</record>
+<record>
+  <date>2018-11-16T14:18:33.785968Z</date>
+  <millis>1542377913785</millis>
+  <nanos>968000</nanos>
+  <sequence>4</sequence>
+  <logger>local.corejava</logger>
+  <level>FINER</level>
+  <class>ImageViewerFrame.FileOpenListener</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>ENTRY java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=Open,when=1542377913781,modifiers=Button1] on javax.swing.JMenuItem[,1,3,57x19,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@1f0d0b7a,flags=264,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Open]</message>
+</record>
+<record>
+  <date>2018-11-16T14:18:38.093419Z</date>
+  <millis>1542377918093</millis>
+  <nanos>419000</nanos>
+  <sequence>5</sequence>
+  <logger>local.corejava</logger>
+  <level>FINE</level>
+  <class>c7.ImageViewerFrame$FileOpenListener</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>reading file /home/moonlight/java/javastudy/src/c7/timg.gif</message>
+</record>
+<record>
+  <date>2018-11-16T14:18:38.213947Z</date>
+  <millis>1542377918213</millis>
+  <nanos>947000</nanos>
+  <sequence>6</sequence>
+  <logger>local.corejava</logger>
+  <level>FINER</level>
+  <class>ImageViewerFrame.FileOpenListener</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>RETURN</message>
+</record>
+</log>
